@@ -43,7 +43,7 @@
       <cfset myArray[2]="Goodbye">
       <cfset myArray[3]={}
       
-        <cfdump var="#myArray#" label="MyArray">
+       
 
        <cfset myBooks={
  
@@ -92,7 +92,7 @@
            }
        }
        >   <cfdump var="#myBooks#" label="myBooks">
-        
+             <cfdump var="#myArray#" label="MyArray">
    
 		
 	  	</body> <!-- The end of the body tag  -->
