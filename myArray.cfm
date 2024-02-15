@@ -29,6 +29,7 @@
            writeOutput("date variable value is : " & dateformat &  "<br/>")
             writeOutput("date value check using isValid is : " )
         </cfscript>
+        <br>
         
         <cfoutput>
          #isValid("date",todayDate)#
@@ -38,18 +39,12 @@
     
         <br>
 
-      <cfset myArray=ArrayNew(1)>
-      <cfset myArray[1]="Hello">
-      <cfset myArray[2]="Goodbye">
-      <cfset myArray[3]={}
+  
       
-       
-
-       <cfset myBooks={
- 
-          Title:{
-            Title: "The Principle of Relativity by Albert Einstein and H. Minkowski"
-          },
+        <cfset myBooks=ArrayNew(1)>
+     
+        <cfset myBooks[1]= {  Title:{
+            Title: "The Principle of Relativity by Albert Einstein and H. Minkowski"},
           
             Author:{
               Author: "Einstein, Albert, 1879-1955"
@@ -90,9 +85,102 @@
             Downloads: "228 downloads in the last 30 days."
 
            }
-       }
-       >   <cfdump var="#myBooks#" label="myBooks">
-             <cfdump var="#myArray#" label="MyArray">
+          
+          
+          }>
+        
+        <cfset myBooks[2]= {  Title:{
+            Title: "Sidelights on Relativity by Albert Einstein"},
+          
+            Author:{
+              Author: "Einstein, Albert, 1879-1955"
+          },
+            Translator:{
+            Translator: "Äther und Relativitäts-Theorie + Geometrie und Erfahrung Englisch"
+          },
+          
+            Credits:{
+              Credits: "Produced by David Starner, William Fishburne and the Online"
+          },
+           Language:{
+            Language: "English"
+          },
+          
+            LoC_Class:{
+              LoC_Class: "Andrew D. Hwang, updated for HTML+SVG by Laura Natal Rodrigues"
+          },
+           Subject:{
+            Subject: "QC: Science: Physics"
+          },
+          
+            Category:{
+              Category: "Relativity (Physics)"
+          },
+            EBook_No:{
+            EBook_No: 7333
+          },
+          
+            ISBN13:{
+              ISBN13: 97800007333
+          },
+           Most_Recently_Updated:{
+           Most_Recently_Updated: "27-Jan-21"
+          },
+          
+           Downloads:{
+            Downloads: "100 downloads in the last 30 days."
+
+           }
+        }>
+          
+           
+        <cfset myBooks[3]= {  Title:{
+            Title: "Fundamental ideas and problems of the theory of relativity by Albert Einstein
+"},
+          
+            Author:{
+              Author: "Einstein, Albert, 1879-1955"
+          },
+            Translator:{
+            Translator: "Fundamental ideas and problems of the theory of relativity"
+          },
+          
+            Credits:{
+              Credits: "Laura Natal Rodrigues (Images generously made available by the Nobel Foundation.)"
+          },
+           Language:{
+            Language: "English"
+          },
+          
+            LoC_Class:{
+              LoC_Class: "Andrew D. Hwang, updated for HTML+SVG by Laura Natal Rodrigues"
+          },
+           Subject:{
+            Subject: "QC: Science: Physics"
+          },
+          
+            Category:{
+              Category: "Relativity (Physics)"
+          },
+            EBook_No:{
+            EBook_No: 69572
+          },
+          
+            ISBN13:{
+              ISBN13: 97800069572
+          },
+           Most_Recently_Updated:{
+           Most_Recently_Updated: "18-Dec-22"
+          },
+          
+           Downloads:{
+            Downloads: "100 downloads in the last 30 days."
+
+           }
+        }>
+       
+      
+             <cfdump var="#myBooks#" label="MyArrayOfBooks">
    
 		
 	  	</body> <!-- The end of the body tag  -->
