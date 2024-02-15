@@ -1,11 +1,13 @@
 <cfoutput>
 	<ul class="nav flex-column">
-	
-		<li  class="navitem"><a href="\exercises\math.cfm">Math.cfm</a>
-		<li  class="navitem"><a href="\exercises\MyDate.cfm">MyDate.cfm</a>
-		<li  class="navitem"><a href="\exercises\MyObjects.cfm">MyObjects.cfm</a>
-		<li  class="navitem"><a href="\exercises\MyVariables.cfm">MyVariables.cfm</a>
-		<li  class="navitem"><a href="\exercises\MyArray.cfm">MyArray.cfm</a>
+	    
+		<li  class="navitem"><a href="#cgi.SCRIPT_NAME#?p=math">Math.cfm</a>
+		<li  class="navitem"><a href="#cgi.SCRIPT_NAME#?p=MyDate">MyDate.cfm</a>
+		<li  class="navitem"><a href="#cgi.SCRIPT_NAME#?p=MyObjects">MyObjects.cfm</a>
+		<li  class="navitem"><a href="#cgi.SCRIPT_NAME#?p=MyVariables">MyVariables.cfm</a>
+		<li  class="navitem"><a href="#cgi.SCRIPT_NAME#?p=MyArray">MyArray.cfm</a>
+	 
+
 
 	</ul>
 </cfoutput>    
