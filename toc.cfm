@@ -5,6 +5,7 @@
 		<li  class="navitem"><a href="\exercises\MyDate.cfm">MyDate.cfm</a>
 		<li  class="navitem"><a href="\exercises\MyObjects.cfm">MyObjects.cfm</a>
 		<li  class="navitem"><a href="\exercises\MyVariables.cfm">MyVariables.cfm</a>
+		<li  class="navitem"><a href="\exercises\MyArray.cfm">MyArray.cfm</a>
 
 	</ul>
 </cfoutput>    
