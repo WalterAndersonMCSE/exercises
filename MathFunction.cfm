@@ -36,14 +36,16 @@
     
            
            <cfoutput>
-         <form action="#cgi.script_name#?p=#p#"  method="post">
+           <form action="#cgi.script_name#?p=#p#"  method="post">
                     <div class="mb-5">
+                     <cfparam name="form.a" default="0" />
                         <label for=" firstNumber" class="form-label"> Enter First Number</label> 
-                        <input type= numeric  class="form-control" id="a" name="a" placeholder="First Number">
+                        <input type= numeric  class="form-control" id="a" name="a"  placeholder="First Number">
                      <br>  Number entered is :  #a#
                     </div>
                    
                     <div class="mb-5">
+                    <cfparam name="form.b" default="0" />
                         <label for="secondNumber" class="form-label">Enter Second Number</label>
                         <input type= numeric  class="form-control" id="b" name="b" placeholder="Second Number">
                     <br>  Number entered is :  #b#
